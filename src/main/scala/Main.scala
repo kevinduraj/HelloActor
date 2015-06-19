@@ -10,6 +10,10 @@ object Main extends App {
   val helloActor = system.actorOf(Props[HelloActor], name = "helloactor")
   helloActor ! "hello"
   helloActor ! "kevin"
+  helloActor ! "no yo vole"
+
+  val paramActor = system.actorOf(Props[ParamActor], name = "paramactor")
+  paramActor ! "one two three four five six seven"
 
   system.shutdown()
 
