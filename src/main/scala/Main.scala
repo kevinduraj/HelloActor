@@ -11,4 +11,6 @@ object Main extends App {
   helloActor ! "hello"
   helloActor ! "kevin"
 
+  system.shutdown()
+
 }
