@@ -1,9 +1,8 @@
 import akka.actor.Actor
 import akka.actor.ActorSystem
 import akka.actor.Props
-import akka.actor.Stash
 
-class HelloActor extends Actor with Stash {
+class HelloActor extends Actor {
 
   def receive = {
     case "hello" => println("hello back at you")
