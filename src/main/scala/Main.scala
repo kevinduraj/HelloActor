@@ -12,10 +12,13 @@ object Main extends App {
   helloActor ! "no yo vole"
 
   val paramActor = system.actorOf(Props[ParamActor], name = "paramactor")
-  //paramActor ! "one|two|three|four|five|six|seven"
-  val kevin1 = Array("name:kevin", "city:Santa Monica", "title:Programmer", "lang:scala")
-  paramActor ! kevin1
 
+  val kevin1 = Array("name:Kevin Duraj"
+                    , "city:Santa Monica"
+                    , "title:Programmer"
+                    , "language:Scala")
+
+  paramActor ! kevin1
   system.shutdown()
 
 }
