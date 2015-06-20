@@ -13,7 +13,9 @@ object Main extends App {
   helloActor ! "no yo vole"
 
   val paramActor = system.actorOf(Props[ParamActor], name = "paramactor")
-  paramActor ! "one two three four five six seven"
+  //paramActor ! "one|two|three|four|five|six|seven"
+  val kevin1 = Array("Hello", "world", "it's", "me")
+  paramActor ! kevin1
 
   system.shutdown()
 
