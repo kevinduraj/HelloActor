@@ -1,4 +1,4 @@
-Hello Actor - Simple Communication Example
+Hello Actor - Communication
 ==========================================
 
 ```
