@@ -7,13 +7,13 @@ class ParamActor extends Actor with Stash {
 
   def receive = {
 
-    case msg     => peter(msg) 
+    case msg     => processMessage(msg) 
     //case msg   => println("Received message: '%s' in actor %s".format(msg, self.path.name))
     //case msg   => stash()
 
   }
  
-  def peter(msg: Any) {
+  def processMessage(msg: Any) {
     println("Message: '%s'".format(msg))
   }
 
