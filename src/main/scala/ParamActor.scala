@@ -12,14 +12,12 @@ class ParamActor extends Actor with Stash {
   }
  
   def processMessage(msg: Any) {
-
     var cnt=0;
     val params = msg.asInstanceOf[Array[String]]
-    println("------- params2 -------")
+    println("\n")
     for (i <- 0 to params.size) {
       println(cnt + " " + params(i))
       cnt+=1
     }
-    println("----------------------")
   }
 }
